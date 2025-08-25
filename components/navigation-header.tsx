@@ -18,8 +18,8 @@ export function NavigationHeader() {
         <div className="flex flex-1 items-center justify-between space-x-2 md:justify-end">
           <nav className="flex items-center space-x-2">
             <Button variant="outline" size="sm" asChild>
-              <Link href="https://www.theauspiciouscompany.com">
-                ← Back to Main Site
+              <Link href="https://tools.theauspiciouscompany.com">
+                ← Back to Tools
               </Link>
             </Button>
           </nav>
