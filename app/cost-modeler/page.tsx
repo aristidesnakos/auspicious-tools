@@ -13,7 +13,7 @@ import {
 
 
 // Import types
-import type { Model, UnitType, FiltersState, SortState, RangeOption } from './types';
+import type { Model, UnitType, FiltersState, SortState } from './types';
 
 // Import utilities and data
 import { modelsData as initialModelsData, calculateTokens } from './utils';

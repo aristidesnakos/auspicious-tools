@@ -1,5 +1,5 @@
 import type { Model, UnitType } from './types';
-import { rawData } from '../lib/utils/llmPricing';
+import { rawData } from '@/lib/utils/llmPricing';
 
 interface RawModelData {
     modelNameId: string;
