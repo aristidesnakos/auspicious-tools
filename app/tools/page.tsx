@@ -11,10 +11,10 @@ import {
 
 const tools = [
   {
-    name: "SaaS Break-Even KPI Tool",
-    description: "Compare two SaaS business scenarios side-by-side to calculate break-even metrics, LTV/CAC ratios, and key performance indicators",
+    name: "Break Even Analysis Tool",
+    description: "Calculate when your business will break even with our interactive break-even analysis tool. Visualize your path to profitability.",
     status: "Available",
-    path: "/tools/break-even",
+    path: "/break-even",
     category: "Business",
     isExternal: false
   },
@@ -22,7 +22,7 @@ const tools = [
     name: "AI Token Cost Modeler",
     description: "Calculate and compare costs across different AI models and providers",
     status: "Available",
-    path: "/tools/cost-modeler",
+    path: "/cost-modeler",
     category: "AI/ML",
     isExternal: false
   },
