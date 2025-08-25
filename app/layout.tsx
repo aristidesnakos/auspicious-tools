@@ -4,6 +4,7 @@ import type { Metadata } from 'next'
 import { Analytics } from '@vercel/analytics/react'
 import { Toaster } from 'react-hot-toast'
 import { JsonLd, getOrganizationSchema, getToolsPageSchema, combineSchemas } from '@/lib/jsonld'
+import { NavigationHeader } from '@/components/navigation-header'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -60,6 +61,7 @@ export default function RootLayout({
         )} />
       </head>
       <body className={inter.className}>
+        <NavigationHeader />
         <main className="min-h-screen bg-background">
           {children}
         </main>
