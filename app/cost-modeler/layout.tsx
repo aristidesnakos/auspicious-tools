@@ -1,6 +1,6 @@
 import { ReactNode } from "react";
 import { Metadata } from "next";
-import { JsonLd } from "./jsonld";
+import { JsonLd } from "../../lib/jsonld";
 
 export const metadata: Metadata = {
   title: "LLM Cost Visualizer - The Auspicious Company",

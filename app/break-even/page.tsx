@@ -88,7 +88,7 @@ const BreakEvenAnalysis = () => {
       <div className="max-w-7xl mx-auto space-y-8">
         <div className="text-center space-y-4">
           <h1 className="text-4xl font-bold bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent">
-            Break Even Analysis
+            Break Even Analysis Chart
           </h1>
           {breakEvenMonth && (
             <p className="text-2xl font-semibold text-foreground">
@@ -241,7 +241,7 @@ const BreakEvenAnalysis = () => {
           <CardContent>
             <div className="grid md:grid-cols-2 gap-6">
               <div className="space-y-3">
-                <h4 className="font-medium text-red-600">To reduce your costs, check out my <a href="https://medium.com/just-aristides" target="_blank" rel="noopener noreferrer" className="underline hover:text-red-700 transition-colors">blog</a></h4>
+                <h4 className="font-medium text-red-600">To reduce your costs, check out my <a href="https://medium.com/@just-aristides" target="_blank" rel="noopener noreferrer" className="underline hover:text-red-700 transition-colors">blog</a></h4>
                 <p className="text-sm text-muted-foreground">
                   Learn cost optimization strategies, efficient resource management, and smart budgeting techniques to minimize your monthly expenses.
                 </p>
