@@ -1,6 +1,6 @@
 import { ReactNode } from "react";
 import { Metadata } from "next";
-import { JsonLd } from "../../lib/jsonld";
+import { JsonLd } from "@/lib/jsonld";
 
 export const metadata: Metadata = {
   title: "Break Even Analysis Chart - The Auspicious Company",
@@ -17,7 +17,7 @@ export default function BreakEvenLayout({ children }: { children: ReactNode }) {
         "name": "Break Even Analysis Chart",
         "description": "Calculate when your business will break even with our interactive break-even analysis tool. Visualize your path to profitability.",
         "url": "https://tools.theauspiciouscompany.com/break-even",
-        "image": "https://tools.theauspiciouscompany.com/assets/break-even-analysis.png",
+        "image": "https://tools.theauspiciouscompany.com/assets/breakeven-analysis-chart.png",
         "applicationCategory": "BusinessApplication",
         "operatingSystem": "Web",
         "isPartOf": {
