@@ -16,8 +16,10 @@
 # Environment variables
 .env*.local
 
-# Vercel
+# vercel, claude, qodo
 .vercel
+.claude
+.qodo
 
 # TypeScript
 *.tsbuildinfo
