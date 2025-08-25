@@ -16,11 +16,11 @@ interface BreakEvenInputs {
 
 const BreakEvenAnalysis = () => {
   const [inputs, setInputs] = useState<BreakEvenInputs>({
-    initialInvestment: 50000,
-    monthlyCosts: 8000,
-    productPrice: 100,
-    initialMonthlySales: 50,
-    monthlyGrowthRate: 10,
+    initialInvestment: 10000,
+    monthlyCosts: 1000,
+    productPrice: 50,
+    initialMonthlySales: 10,
+    monthlyGrowthRate: 5,
   });
 
   const handleInputChange = (field: keyof BreakEvenInputs, value: string) => {
@@ -102,7 +102,7 @@ const BreakEvenAnalysis = () => {
           )}
         </div>
 
-        <div className="grid lg:grid-cols-3 gap-8">
+        <div className="grid lg:grid-cols-4 gap-8">
           {/* Assumptions */}
           <Card className="lg:col-span-1">
             <CardHeader>
@@ -191,9 +191,9 @@ const BreakEvenAnalysis = () => {
           </Card>
 
           {/* Chart */}
-          <Card className="lg:col-span-2">
+          <Card className="lg:col-span-3">
             <CardHeader>
-              <CardTitle className="text-xl font-semibold text-foreground flex items-center gap-2">
+              <CardTitle className="text-xl font-semibold text-foreground flex items-center justify-center gap-2">
                 📈 Net Income Over Time
               </CardTitle>
             </CardHeader>
@@ -212,6 +212,7 @@ const BreakEvenAnalysis = () => {
                       stroke="hsl(var(--muted-foreground))"
                       fontSize={12}
                       tickFormatter={formatCurrency}
+                      label={{offset: -20}}
                     />
                     <ReferenceLine y={0} stroke="hsl(var(--border))" strokeWidth={2} />
                     <Tooltip content={<CustomTooltip />} />
@@ -240,13 +241,13 @@ const BreakEvenAnalysis = () => {
           <CardContent>
             <div className="grid md:grid-cols-2 gap-6">
               <div className="space-y-3">
-                <h4 className="font-medium text-red-600">To reduce your costs, check out my blog</h4>
+                <h4 className="font-medium text-red-600">To reduce your costs, check out my <a href="https://medium.com/just-aristides" target="_blank" rel="noopener noreferrer" className="underline hover:text-red-700 transition-colors">blog</a></h4>
                 <p className="text-sm text-muted-foreground">
                   Learn cost optimization strategies, efficient resource management, and smart budgeting techniques to minimize your monthly expenses.
                 </p>
               </div>
               <div className="space-y-3">
-                <h4 className="font-medium text-green-600">To increase your sales, check out my automations!</h4>
+                <h4 className="font-medium text-green-600">To increase your sales, check out <a href="https://arinakos.gumroad.com" target="_blank" rel="noopener noreferrer" className="underline hover:text-green-700 transition-colors">my automations</a>!</h4>
                 <p className="text-sm text-muted-foreground">
                   Discover automated marketing tools, sales funnels, and growth strategies to boost your monthly sales and accelerate your path to profitability.
                 </p>
